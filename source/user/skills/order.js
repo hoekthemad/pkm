@@ -1,4 +1,4 @@
-OrderSkills = {
+TheOrder = {
     faith: {
         level: 1, relicLevel: 1, baseEffect: 0.205, display: 'Faith'
     },
@@ -17,12 +17,12 @@ OrderSkills = {
      * Set the level of a particular order skills
      * 
      * Setting faith level for example; 
-     * OrderSkills.setLevel('faith', 2308);
+     * TheOrder.setLevel('faith', 2308);
      * @param {string} skillName 
      * @param {int} level 
      */
     setLevel: (skillName, level) => {
-        OrderSkills[skillName].level = level;
+        TheOrder[skillName].level = level;
     },
 
     /**
@@ -30,12 +30,12 @@ OrderSkills = {
      * Returns the level of a particular order skill
      * 
      * Getting faith level for example;
-     * OrderSkills.getLevel('faith')
+     * TheOrder.getLevel('faith')
      * @param {string} skillName 
      * @returns {int}
      */
     getLevel: (skillName) => {
-        return parseInt(OrderSkills[skillName].level);
+        return parseInt(TheOrder[skillName].level);
     },
 
     /**
@@ -43,12 +43,12 @@ OrderSkills = {
      * Set the relic level of a particular order skills
      * 
      * Setting faith relic level for example;
-     * OrderSkills.setRelicLevel('faith', 3793);
+     * TheOrder.setRelicLevel('faith', 3793);
      * @param {string} skillName 
      * @param {int} relicLevel 
      */
     setRelicLevel: (skillName, relicLevel) => {
-        OrderSkills[skillName].relicLevel = relicLevel;
+        TheOrder[skillName].relicLevel = relicLevel;
     },
 
     /**
@@ -56,12 +56,12 @@ OrderSkills = {
      * Returns the Relic level of a particular order skill
      * 
      * Getting faith relic level for example;
-     * OrderSkills.getRelicLevel('faith')
+     * TheOrder.getRelicLevel('faith')
      * @param {string} skillName 
      * @returns {int}
      */
     getRelicLevel: (skillName) => {
-        return parseInt(OrderSkills[skillName].relicLevel);
+        return parseInt(TheOrder[skillName].relicLevel);
     },
 
     /**
@@ -71,7 +71,7 @@ OrderSkills = {
      * @returns {Float64Array}
      */
     getBaseEffect: (skillName) => {
-        return parseFloat(OrderSkills[skillName].baseEffect);
+        return parseFloat(TheOrder[skillName].baseEffect);
     },
 
     /**
@@ -79,11 +79,11 @@ OrderSkills = {
      * Returns the name value to be output to the UI of a skill
      * 
      * Getting faith display value for example;
-     * OrderSkills.getDisplay('faith');
+     * TheOrder.getDisplay('faith');
      * @param {string} skillName 
      * @returns {string}
      */
     getDisplay: (skillName) => {
-        return OrderSkills[skillName].display.toString();
+        return TheOrder[skillName].display.toString();
     }
 }
